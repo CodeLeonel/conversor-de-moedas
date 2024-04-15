@@ -5,17 +5,11 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class Consulta {
+public class ConsultaHTTP {
 
-    private HttpClient cliente;
+    private static HttpClient cliente = HttpClient.newHttpClient();
 
-    public Consulta() {
-
-        cliente = HttpClient.newHttpClient();
-
-    }
-
-    public String viaHttp(URI uri) {
+    public static String viaHttp(URI uri) {
 
         try{
 
