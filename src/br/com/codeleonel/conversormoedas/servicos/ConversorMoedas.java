@@ -1,5 +1,6 @@
 package br.com.codeleonel.conversormoedas.servicos;
 
+import br.com.codeleonel.conversormoedas.estados.ConversaoEstado;
 import br.com.codeleonel.conversormoedas.modelos.Conversao;
 
 import java.util.ArrayList;
@@ -7,17 +8,33 @@ import java.util.List;
 
 public class ConversorMoedas {
 
-    private List<Conversao> conversoes = new ArrayList<>();
-
     private double valor;
 
-    public double converterMoedas(String codigoBase, String codigoAlvo) {
+    private double valorConversao;
 
-        var conversao = BuscaConversao.buscaTaxaConversaoPares(codigoBase,codigoAlvo);
+    public double converterValorEntreMoedas(String codigoBase, String codigoAlvo) {
 
-        conversoes.add(conversao);
+        try {
 
-        return valor * Double.parseDouble(conversao.conversion_rate());
+            var conversao = BuscaConversao.buscaTaxaConversaoPares(codigoBase, codigoAlvo);
+
+            ConversaoEstado.adicionar(conversao);
+
+            valorConversao = valor * Double.parseDouble(conversao.conversion_rate());
+
+        } catch (Exception e) {
+
+            System.out.println("Não foi possível realizar conversão das moedas");
+
+        }
+        return valorConversao;
+
+    }
+
+    public ConversorMoedas() {
+
+        valor = 0.0;
+        valorConversao = 0.0;
 
     }
 
@@ -29,4 +46,7 @@ public class ConversorMoedas {
         this.valor = valor;
     }
 
+    public double getValorConversao() {
+        return valorConversao;
+    }
 }

@@ -12,11 +12,21 @@ public class BuscaConversao {
 
     public static Conversao buscaTaxaConversaoPares(String codigoBase, String codigoAlvo) {
 
-        String resposta = ConsultaHTTP.viaHttp(MontadorURI.taxaConversaoPares(codigoBase,codigoAlvo));
+        try {
 
-        var conversao = gson.fromJson(resposta, Conversao.class);
+            String resposta = ConsultaHTTP.viaHttp(MontadorURI.taxaConversaoPares(codigoBase, codigoAlvo));
 
-        return conversao;
+            var conversao = gson.fromJson(resposta, Conversao.class);
+
+            return conversao;
+
+        } catch (Exception e) {
+            
+            System.out.println("Não foi possível buscar a taxa de conversão das moedas: " + e.getMessage());
+        
+        }
+
+        return null;
 
     }
 

@@ -11,7 +11,7 @@ public class ConsultaHTTP {
 
     public static String viaHttp(URI uri) {
 
-        try{
+        try {
 
             HttpRequest requisicao = HttpRequest.newBuilder().uri(uri).build();
 
