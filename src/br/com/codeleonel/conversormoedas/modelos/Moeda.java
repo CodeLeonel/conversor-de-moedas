@@ -12,6 +12,11 @@ public class Moeda {
         this.pais = pais;
     }
 
+    @Override
+    public String toString() {
+        return this.getCodigo() + " " + this.getNome();
+    }
+
     public String getCodigo() {
         return codigo;
     }

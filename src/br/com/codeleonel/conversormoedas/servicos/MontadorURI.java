@@ -14,7 +14,7 @@ public class MontadorURI {
 
             chave = System.getenv("apiKeyER");
 
-            novoUri = "https://v6.exchangerate-api.com/v6/%s/pair/%s/%s".formatted(chave, codBase, codBase);
+            novoUri = "https://v6.exchangerate-api.com/v6/%s/pair/%s/%s".formatted(chave, codBase, codAlvo);
 
             uri = URI.create(novoUri);
 

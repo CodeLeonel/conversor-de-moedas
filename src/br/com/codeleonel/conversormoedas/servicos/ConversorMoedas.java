@@ -8,9 +8,9 @@ import java.util.List;
 
 public class ConversorMoedas {
 
-    private double valor;
+    private double valor = 0;
 
-    private double valorConversao;
+    private double valorConversao = 0;
 
     public double converterValorEntreMoedas(String codigoBase, String codigoAlvo) {
 
@@ -20,7 +20,11 @@ public class ConversorMoedas {
 
             ConversaoEstado.adicionar(conversao);
 
+            System.out.println(conversao.conversion_rate());
+
             valorConversao = valor * Double.parseDouble(conversao.conversion_rate());
+
+            System.out.println(valorConversao);
 
         } catch (Exception e) {
 

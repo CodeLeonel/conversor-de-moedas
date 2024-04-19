@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16483ca-bd98-4c6d-be14-37e9133edd85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/estados/ConversaoEstado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/estados/MoedaEstado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Moeda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/LeitorMoedas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/BuscaConversao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/BuscaConversao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConsultaHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConsultaHTTP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Moeda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/LeitorMoedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/LeitorMoedas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConversorMoedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConversorMoedas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/MontadorURI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/MontadorURI.java" afterDir="false" />
     </list>
@@ -43,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
     &quot;Application.Teste.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
