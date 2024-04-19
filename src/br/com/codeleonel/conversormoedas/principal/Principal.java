@@ -1,12 +1,9 @@
 package br.com.codeleonel.conversormoedas.principal;
 
 import br.com.codeleonel.conversormoedas.cli.ComandosCli;
-import br.com.codeleonel.conversormoedas.modelos.Moeda;
-import br.com.codeleonel.conversormoedas.estados.MoedaEstado;
 import br.com.codeleonel.conversormoedas.repositorios.LeitorMoedas;
 import br.com.codeleonel.conversormoedas.servicos.ConversorMoedas;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
@@ -41,7 +38,7 @@ public class Principal {
             }
 
             if (opcao != 0 && conversorMoedas.getValor() != 0.0) {
-                ComandosCli.menuCompleto();
+                ComandosCli.menuCompleto(conversorMoedas.getValor(),codigoBase,codigoAlvo,conversorMoedas.getMensagemUltimaConversao());
                 opcao = scanner.nextInt();
 
                 switch (opcao) {
@@ -52,14 +49,15 @@ public class Principal {
                         conversorMoedas.setValor(scanner.nextDouble());
                         break;
                     case 2:
+                        scanner.nextLine();
                         codigoBase = ComandosCli.escolhaMoeda(scanner);
                         break;
                     case 3:
+                        scanner.nextLine();
                         codigoAlvo = ComandosCli.escolhaMoeda(scanner);
                         break;
                     case 4:
                         conversorMoedas.converterValorEntreMoedas(codigoBase, codigoAlvo);
-                        System.out.println("O valor de " + conversorMoedas.getValor() + " [" + codigoBase + "] para [" + codigoAlvo + "] é " + conversorMoedas.getValorConversao());
                         break;
                     default:
                         System.out.println("Opção inválida!");

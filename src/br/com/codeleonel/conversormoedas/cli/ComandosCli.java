@@ -14,25 +14,48 @@ public class ComandosCli {
 
     public static void primeirasOpcoes() {
 
-        System.out.println("""
+        System.out.print("""
                             1 - Insira um valor
                             0 - Sair
-                            Digite uma opção: """);
+                            Digite uma opção:  """);
 
     }
 
     public static void opcoesCompletas() {
 
-        System.out.println("""
+        System.out.print("""
                             1 - Insira um valor
                             2 - Escolha a moeda base
                             3 - Escolha a moeda alvo
                             4 - Converter o valor
                             0 - Sair
-                            Digite uma opção: """);
+                            Digite uma opção:  """);
 
     }
 
+    public static void exibeVariaveis(double valor, String moedaBase, String moedaAlvo, String mensagemConversao) {
+
+        System.out.println(" ");
+
+        if(valor > 0.0) {
+            System.out.println("VALOR: " + valor);
+        }
+
+        if(moedaBase != null && !moedaBase.isBlank()) {
+            System.out.println("MOEDA BASE: ["+moedaBase+"]");
+        }
+
+        if(moedaAlvo != null && !moedaAlvo.isBlank()) {
+            System.out.println("MOEDA ALVO: ["+moedaAlvo+"]");
+        }
+
+        if(mensagemConversao != null && !mensagemConversao.isBlank()) {
+            System.out.println(mensagemConversao);
+        }
+
+        System.out.println(" ");
+
+    }
 
 
     public static void menuSimples() {
@@ -43,11 +66,13 @@ public class ComandosCli {
 
     }
 
-    public static void menuCompleto() {
+    public static void menuCompleto(double valor, String moedaBase, String moedaAlvo, String mensagem) {
 
         limparConsole();
         titulo();
+        exibeVariaveis(valor, moedaBase, moedaAlvo, mensagem);
         opcoesCompletas();
+
 
     }
 
@@ -68,11 +93,11 @@ public class ComandosCli {
             exibeListaEmParte(i,max);
 
             if(max == 6) {
-                System.out.println("Digite a opção de uma moeda (ou A - Avançar): ");
+                System.out.print("Digite a opção de uma moeda (ou A - Avançar): ");
             } else if(max > 6 && max < listaMoedas.size()) {
-                System.out.println("Digite a opção de uma moeda (ou A - Avançar ou R - Recuar): ");
+                System.out.print("Digite a opção de uma moeda (ou A - Avançar ou R - Recuar): ");
             } else if(max == listaMoedas.size()) {
-                System.out.println("Digite a opção de uma moeda (ou R - Recuar): ");
+                System.out.print("Digite a opção de uma moeda (ou R - Recuar): ");
             }
 
             String opcaoSubMenu = scanner.nextLine();

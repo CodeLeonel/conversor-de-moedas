@@ -12,7 +12,9 @@ public class ConversorMoedas {
 
     private double valorConversao = 0;
 
-    public double converterValorEntreMoedas(String codigoBase, String codigoAlvo) {
+    private String mensagemUltimaConversao = null;
+
+    public void converterValorEntreMoedas(String codigoBase, String codigoAlvo) {
 
         try {
 
@@ -20,18 +22,15 @@ public class ConversorMoedas {
 
             ConversaoEstado.adicionar(conversao);
 
-            System.out.println(conversao.conversion_rate());
-
             valorConversao = valor * Double.parseDouble(conversao.conversion_rate());
 
-            System.out.println(valorConversao);
+            mensagemUltimaConversao = "O valor de %.2f [%s] para [%s] é %.2f".formatted(valor,codigoBase,codigoAlvo,valorConversao);
 
         } catch (Exception e) {
 
             System.out.println("Não foi possível realizar conversão das moedas");
 
         }
-        return valorConversao;
 
     }
 
@@ -52,5 +51,9 @@ public class ConversorMoedas {
 
     public double getValorConversao() {
         return valorConversao;
+    }
+
+    public String getMensagemUltimaConversao() {
+        return mensagemUltimaConversao;
     }
 }
