@@ -14,59 +14,87 @@ public class ComandosCli {
 
     }
 
-    public static void primeirasOpcoes() {
+    public static void opcoesCompletas(double valor, String moedaBase, String moedaAlvo) {
 
-        System.out.print("""
-                            1 - Insira um valor
-                            0 - Sair
-                            Digite uma opção:  """);
+        String menu = null;
+        var historicoVazio = HistoricoEstado.getListaHistorico().isEmpty();
 
-    }
+        if (valor == 0.0 && moedaBase == null && moedaAlvo == null && historicoVazio) {
 
-    public static void opcoesCompletas(String moedaBase, String moedaAlvo) {
+            menu = """
+                    1 - Insira um valor
+                    0 - Sair
+                    Digite uma opção:  """;
 
-        if(moedaBase == null && moedaAlvo == null) {
+        } else if (valor == 0.0 && moedaBase == null && moedaAlvo == null && !historicoVazio) {
 
-            System.out.print("""
-                            1 - Insira um valor
-                            2 - Escolha a moeda base
-                            0 - Sair
-                            Digite uma opção:  """);
+            menu = """
+                    1 - Insira um valor
+                    5 - Histórico de conversões
+                    0 - Sair
+                    Digite uma opção:  """;
 
-        } else if(moedaBase != null && moedaAlvo == null) {
+        } else if (valor > 0.0 && moedaBase == null && moedaAlvo == null && historicoVazio) {
 
-            System.out.print("""
-                            1 - Insira um valor
-                            2 - Escolha a moeda base
-                            3 - Escolha a moeda alvo
-                            0 - Sair
-                            Digite uma opção:  """);
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    0 - Sair
+                    Digite uma opção:  """;
 
-        } else if(moedaBase != null && moedaAlvo != null && HistoricoEstado.getListaHistorico().isEmpty()) {
+        } else if (valor > 0.0 && moedaBase == null && moedaAlvo == null && !historicoVazio) {
 
-            System.out.print("""
-                            1 - Insira um valor
-                            2 - Escolha a moeda base
-                            3 - Escolha a moeda alvo
-                            4 - Converter o valor
-                            0 - Sair
-                            Digite uma opção:  """);
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    5 - Histórico de conversões
+                    0 - Sair
+                    Digite uma opção:  """;
 
-        } else if(moedaBase != null && moedaAlvo != null && !HistoricoEstado.getListaHistorico().isEmpty()) {
+        } else if (valor > 0.0 && moedaBase != null && moedaAlvo == null && historicoVazio) {
 
-            System.out.print("""
-                            1 - Insira um valor
-                            2 - Escolha a moeda base
-                            3 - Escolha a moeda alvo
-                            4 - Converter o valor
-                            5 - Histórico de conversões
-                            0 - Sair
-                            Digite uma opção:  """);
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    3 - Escolha a moeda alvo
+                    0 - Sair
+                    Digite uma opção:  """;
+
+        } else if (valor > 0.0 && moedaBase != null && moedaAlvo == null && !historicoVazio) {
+
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    3 - Escolha a moeda alvo
+                    5 - Histórico de conversões
+                    0 - Sair
+                    Digite uma opção:  """;
+
+        } else if (valor > 0.0 && moedaBase != null && moedaAlvo != null && historicoVazio) {
+
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    3 - Escolha a moeda alvo
+                    4 - Converter o valor
+                    0 - Sair
+                    Digite uma opção:  """;
+
+        } else if (valor > 0.0 && moedaBase != null && moedaAlvo != null && !historicoVazio) {
+
+            menu = """
+                    1 - Insira um valor
+                    2 - Escolha a moeda base
+                    3 - Escolha a moeda alvo
+                    4 - Converter o valor
+                    5 - Histórico de conversões
+                    0 - Sair
+                    Digite uma opção:  """;
 
         }
 
 
-
+        System.out.print(menu);
 
     }
 
@@ -74,19 +102,19 @@ public class ComandosCli {
 
         System.out.println(" ");
 
-        if(valor > 0.0) {
+        if (valor > 0.0) {
             System.out.printf("VALOR: %.2f%n", valor);
         }
 
-        if(moedaBase != null && !moedaBase.isBlank()) {
-            System.out.println("MOEDA BASE: ["+moedaBase+"]");
+        if (moedaBase != null && !moedaBase.isBlank()) {
+            System.out.println("MOEDA BASE: [" + moedaBase + "]");
         }
 
-        if(moedaAlvo != null && !moedaAlvo.isBlank()) {
-            System.out.println("MOEDA ALVO: ["+moedaAlvo+"]");
+        if (moedaAlvo != null && !moedaAlvo.isBlank()) {
+            System.out.println("MOEDA ALVO: [" + moedaAlvo + "]");
         }
 
-        if(mensagemConversao != null && !mensagemConversao.isBlank()) {
+        if (mensagemConversao != null && !mensagemConversao.isBlank()) {
             System.out.println(mensagemConversao);
         }
 
@@ -95,20 +123,12 @@ public class ComandosCli {
     }
 
 
-    public static void menuSimples() {
-
-        limparConsole();
-        titulo();
-        primeirasOpcoes();
-
-    }
-
     public static void menuCompleto(double valor, String moedaBase, String moedaAlvo, String mensagem) {
 
         limparConsole();
         titulo();
         exibeVariaveis(valor, moedaBase, moedaAlvo, mensagem);
-        opcoesCompletas(moedaBase, moedaAlvo);
+        opcoesCompletas(valor, moedaBase, moedaAlvo);
 
 
     }
@@ -130,7 +150,7 @@ public class ComandosCli {
             System.out.print("Digite opção de uma moeda (ou M para mais moedas): ");
             String opcaoMenuMoedas = scanner.nextLine();
 
-            if(opcaoMenuMoedas.equals("M")) {
+            if (opcaoMenuMoedas.equals("M")) {
 
                 return escolhaMoedaListaCompleta(scanner);
 
@@ -170,28 +190,28 @@ public class ComandosCli {
 
         i = 1;
 
-        while(true) {
+        while (true) {
 
-            exibeListaEmParte(i,max);
+            exibeListaEmParte(i, max);
 
-            if(max == 6) {
+            if (max == 6) {
                 System.out.print("Digite a opção de uma moeda (ou A - Avançar): ");
-            } else if(max > 6 && max < listaMoedas.size()) {
+            } else if (max > 6 && max < listaMoedas.size()) {
                 System.out.print("Digite a opção de uma moeda (ou A - Avançar ou R - Recuar): ");
-            } else if(max == listaMoedas.size()) {
+            } else if (max == listaMoedas.size()) {
                 System.out.print("Digite a opção de uma moeda (ou R - Recuar): ");
             }
 
             String opcaoSubMenu = scanner.nextLine();
 
-            if(opcaoSubMenu.equals("A")) {
-                if(max < listaMoedas.size()) {
+            if (opcaoSubMenu.equals("A")) {
+                if (max < listaMoedas.size()) {
                     i += 6;
                     max += 6;
                 }
 
-            } else if(opcaoSubMenu.equals("R")) {
-                if(max > 6 && max <= listaMoedas.size()) {
+            } else if (opcaoSubMenu.equals("R")) {
+                if (max > 6 && max <= listaMoedas.size()) {
                     i -= 6;
                     max -= 6;
                 }
@@ -220,9 +240,8 @@ public class ComandosCli {
         return codigoMoeda;
     }
 
-    
 
-    public static void exibeListaEmParte(int inicio, int fim){
+    public static void exibeListaEmParte(int inicio, int fim) {
 
         var lista = MoedaEstado.getListaMoedas();
 
@@ -237,21 +256,15 @@ public class ComandosCli {
 
     public static void limparConsole() {
 
-        try
-        {
+        try {
             final String os = System.getProperty("os.name");
 
-            if (os.contains("Windows"))
-            {
+            if (os.contains("Windows")) {
                 Runtime.getRuntime().exec("cls");
-            }
-            else
-            {
+            } else {
                 Runtime.getRuntime().exec("clear");
             }
-        }
-        catch (final Exception e)
-        {
+        } catch (final Exception e) {
             System.out.println("Ocorreu problema para limpar o console: " + e.getMessage());
         }
     }

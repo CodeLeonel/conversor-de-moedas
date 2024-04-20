@@ -50,14 +50,20 @@ public class ConversorMoedas {
         var historicoConversoes = HistoricoEstado.getListaHistorico();
 
         if(!historicoConversoes.isEmpty()) {
+
+            LocalDateTime instateAtual = LocalDateTime.now();
+
             for(var historico : historicoConversoes) {
+
+                LocalDateTime instante = historico.getInstante();
 
                 if(historico.getConversao().base_code().equals(codigoBase)
                         && historico.getConversao().target_code().equals(codigoAlvo)
                         && historico.getValor() == valor
-                        && historico.getValorConversao() == valorConversao
-                        && historico.getInstante().getDayOfYear() == LocalDateTime.now().getDayOfYear()) {
-                    throw new RuntimeException("Já foi realizado uma mesma conversão anteriomente, consulte o histórico de conversões");
+                        && instante.getDayOfYear() == instateAtual.getDayOfYear()
+                        && instante.getMonth() == instateAtual.getMonth()
+                        && instante.getYear() == instateAtual.getYear()) {
+                    throw new RuntimeException("Já foi realizado uma mesma conversão deste valor anteriomente, consulte o histórico de conversões");
                 }
 
             }

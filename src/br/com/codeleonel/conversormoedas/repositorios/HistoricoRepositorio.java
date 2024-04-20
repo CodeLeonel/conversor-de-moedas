@@ -71,7 +71,7 @@ public class HistoricoRepositorio {
             }
 
         } catch (Exception e) {
-            System.out.println("Não foi possível persistir o histórico de conversões: " + e.getMessage());
+            System.out.println("Não foi possível ler o histórico de conversões: " + e.getMessage());
         }
 
     }
