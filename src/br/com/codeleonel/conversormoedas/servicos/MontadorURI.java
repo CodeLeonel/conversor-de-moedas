@@ -20,7 +20,7 @@ public class MontadorURI {
 
         } catch (Exception e) {
 
-            System.out.println("Não foi possíel montar a URI: " + e.getMessage());
+            System.out.println("Não foi possível montar a URI: " + e.getMessage());
 
         }
 

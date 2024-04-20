@@ -1,6 +1,8 @@
 package br.com.codeleonel.conversormoedas.cli;
 
+import br.com.codeleonel.conversormoedas.estados.HistoricoEstado;
 import br.com.codeleonel.conversormoedas.estados.MoedaEstado;
+import br.com.codeleonel.conversormoedas.modelos.Moeda;
 
 import java.util.Scanner;
 
@@ -21,15 +23,50 @@ public class ComandosCli {
 
     }
 
-    public static void opcoesCompletas() {
+    public static void opcoesCompletas(String moedaBase, String moedaAlvo) {
 
-        System.out.print("""
+        if(moedaBase == null && moedaAlvo == null) {
+
+            System.out.print("""
+                            1 - Insira um valor
+                            2 - Escolha a moeda base
+                            0 - Sair
+                            Digite uma opção:  """);
+
+        } else if(moedaBase != null && moedaAlvo == null) {
+
+            System.out.print("""
+                            1 - Insira um valor
+                            2 - Escolha a moeda base
+                            3 - Escolha a moeda alvo
+                            0 - Sair
+                            Digite uma opção:  """);
+
+        } else if(moedaBase != null && moedaAlvo != null && HistoricoEstado.getListaHistorico().isEmpty()) {
+
+            System.out.print("""
                             1 - Insira um valor
                             2 - Escolha a moeda base
                             3 - Escolha a moeda alvo
                             4 - Converter o valor
                             0 - Sair
                             Digite uma opção:  """);
+
+        } else if(moedaBase != null && moedaAlvo != null && !HistoricoEstado.getListaHistorico().isEmpty()) {
+
+            System.out.print("""
+                            1 - Insira um valor
+                            2 - Escolha a moeda base
+                            3 - Escolha a moeda alvo
+                            4 - Converter o valor
+                            5 - Histórico de conversões
+                            0 - Sair
+                            Digite uma opção:  """);
+
+        }
+
+
+
 
     }
 
@@ -38,7 +75,7 @@ public class ComandosCli {
         System.out.println(" ");
 
         if(valor > 0.0) {
-            System.out.println("VALOR: " + valor);
+            System.out.printf("VALOR: %.2f%n", valor);
         }
 
         if(moedaBase != null && !moedaBase.isBlank()) {
@@ -71,12 +108,57 @@ public class ComandosCli {
         limparConsole();
         titulo();
         exibeVariaveis(valor, moedaBase, moedaAlvo, mensagem);
-        opcoesCompletas();
+        opcoesCompletas(moedaBase, moedaAlvo);
 
 
     }
 
     public static String escolhaMoeda(Scanner scanner) {
+
+        var listaMoedasFiltradas = MoedaEstado.getListaMoedas().stream().filter(Moeda::getAluraFilter).toList();
+
+        String codigoMoeda = null;
+
+        while (true) {
+
+            for (int i = 0; i < listaMoedasFiltradas.size(); i++) {
+
+                System.out.println((i + 1) + " - " + listaMoedasFiltradas.get(i));
+
+            }
+
+            System.out.print("Digite opção de uma moeda (ou M para mais moedas): ");
+            String opcaoMenuMoedas = scanner.nextLine();
+
+            if(opcaoMenuMoedas.equals("M")) {
+
+                return escolhaMoedaListaCompleta(scanner);
+
+            } else {
+
+                try {
+
+                    int opcaoIntMenuMoedas = Integer.parseInt(opcaoMenuMoedas) - 1;
+
+                    var item = listaMoedasFiltradas.get(opcaoIntMenuMoedas);
+
+                    codigoMoeda = item.getCodigo();
+                    break;
+
+                } catch (Exception e) {
+
+                    System.out.println("Opção inserida apresentou erro: " + e.getMessage());
+
+                }
+            }
+
+        }
+
+        return codigoMoeda;
+
+    }
+
+    public static String escolhaMoedaListaCompleta(Scanner scanner) {
 
         var listaMoedas = MoedaEstado.getListaMoedas();
 
@@ -138,6 +220,7 @@ public class ComandosCli {
         return codigoMoeda;
     }
 
+    
 
     public static void exibeListaEmParte(int inicio, int fim){
 

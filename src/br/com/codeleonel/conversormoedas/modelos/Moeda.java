@@ -5,11 +5,13 @@ public class Moeda {
     private String codigo;
     private String nome;
     private String pais;
+    private Boolean aluraFilter;
 
-    public Moeda(String codigo, String nome, String pais) {
+    public Moeda(String codigo, String nome, String pais, Boolean aluraFilter) {
         this.codigo = codigo;
         this.nome = nome;
         this.pais = pais;
+        this.aluraFilter = aluraFilter;
     }
 
     @Override
@@ -27,5 +29,9 @@ public class Moeda {
 
     public String getPais() {
         return pais;
+    }
+
+    public Boolean getAluraFilter() {
+        return aluraFilter;
     }
 }

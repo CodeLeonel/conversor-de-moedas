@@ -8,6 +8,10 @@ public class Teste {
 
         System.out.println(variavelAmbiente);
 
+        String texto = "1000.00";
+
+        double numero = Double.valueOf(texto);
+
     }
 
 }

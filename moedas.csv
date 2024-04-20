@@ -1,162 +1,162 @@
-Currency Code;Currency Name;Country
-AED;UAE Dirham;United Arab Emirates
-AFN;Afghan Afghani;Afghanistan
-ALL;Albanian Lek;Albania
-AMD;Armenian Dram;Armenia
-ANG;Netherlands Antillian Guilder;Netherlands Antilles
-AOA;Angolan Kwanza;Angola
-ARS;Argentine Peso;Argentina
-AUD;Australian Dollar;Australia
-AWG;Aruban Florin;Aruba
-AZN;Azerbaijani Manat;Azerbaijan
-BAM;Bosnia and Herzegovina Mark;Bosnia and Herzegovina
-BBD;Barbados Dollar;Barbados
-BDT;Bangladeshi Taka;Bangladesh
-BGN;Bulgarian Lev;Bulgaria
-BHD;Bahraini Dinar;Bahrain
-BIF;Burundian Franc;Burundi
-BMD;Bermudian Dollar;Bermuda
-BND;Brunei Dollar;Brunei
-BOB;Bolivian Boliviano;Bolivia
-BRL;Brazilian Real;Brazil
-BSD;Bahamian Dollar;Bahamas
-BTN;Bhutanese Ngultrum;Bhutan
-BWP;Botswana Pula;Botswana
-BYN;Belarusian Ruble;Belarus
-BZD;Belize Dollar;Belize
-CAD;Canadian Dollar;Canada
-CDF;Congolese Franc;Democratic Republic of the Congo
-CHF;Swiss Franc;Switzerland
-CLP;Chilean Peso;Chile
-CNY;Chinese Renminbi;China
-COP;Colombian Peso;Colombia
-CRC;Costa Rican Colon;Costa Rica
-CUP;Cuban Peso;Cuba
-CVE;Cape Verdean Escudo;Cape Verde
-CZK;Czech Koruna;Czech Republic
-DJF;Djiboutian Franc;Djibouti
-DKK;Danish Krone;Denmark
-DOP;Dominican Peso;Dominican Republic
-DZD;Algerian Dinar;Algeria
-EGP;Egyptian Pound;Egypt
-ERN;Eritrean Nakfa;Eritrea
-ETB;Ethiopian Birr;Ethiopia
-EUR;Euro;European Union
-FJD;Fiji Dollar;Fiji
-FKP;Falkland Islands Pound;Falkland Islands
-FOK;Faroese Króna;Faroe Islands
-GBP;Pound Sterling;United Kingdom
-GEL;Georgian Lari;Georgia
-GGP;Guernsey Pound;Guernsey
-GHS;Ghanaian Cedi;Ghana
-GIP;Gibraltar Pound;Gibraltar
-GMD;Gambian Dalasi;The Gambia
-GNF;Guinean Franc;Guinea
-GTQ;Guatemalan Quetzal;Guatemala
-GYD;Guyanese Dollar;Guyana
-HKD;Hong Kong Dollar;Hong Kong
-HNL;Honduran Lempira;Honduras
-HRK;Croatian Kuna;Croatia
-HTG;Haitian Gourde;Haiti
-HUF;Hungarian Forint;Hungary
-IDR;Indonesian Rupiah;Indonesia
-ILS;Israeli New Shekel;Israel
-IMP;Manx Pound;Isle of Man
-INR;Indian Rupee;India
-IQD;Iraqi Dinar;Iraq
-IRR;Iranian Rial;Iran
-ISK;Icelandic Króna;Iceland
-JEP;Jersey Pound;Jersey
-JMD;Jamaican Dollar;Jamaica
-JOD;Jordanian Dinar;Jordan
-JPY;Japanese Yen;Japan
-KES;Kenyan Shilling;Kenya
-KGS;Kyrgyzstani Som;Kyrgyzstan
-KHR;Cambodian Riel;Cambodia
-KID;Kiribati Dollar;Kiribati
-KMF;Comorian Franc;Comoros
-KRW;South Korean Won;South Korea
-KWD;Kuwaiti Dinar;Kuwait
-KYD;Cayman Islands Dollar;Cayman Islands
-KZT;Kazakhstani Tenge;Kazakhstan
-LAK;Lao Kip;Laos
-LBP;Lebanese Pound;Lebanon
-LKR;Sri Lanka Rupee;Sri Lanka
-LRD;Liberian Dollar;Liberia
-LSL;Lesotho Loti;Lesotho
-LYD;Libyan Dinar;Libya
-MAD;Moroccan Dirham;Morocco
-MDL;Moldovan Leu;Moldova
-MGA;Malagasy Ariary;Madagascar
-MKD;Macedonian Denar;North Macedonia
-MMK;Burmese Kyat;Myanmar
-MNT;Mongolian Tögrög;Mongolia
-MOP;Macanese Pataca;Macau
-MRU;Mauritanian Ouguiya;Mauritania
-MUR;Mauritian Rupee;Mauritius
-MVR;Maldivian Rufiyaa;Maldives
-MWK;Malawian Kwacha;Malawi
-MXN;Mexican Peso;Mexico
-MYR;Malaysian Ringgit;Malaysia
-MZN;Mozambican Metical;Mozambique
-NAD;Namibian Dollar;Namibia
-NGN;Nigerian Naira;Nigeria
-NIO;Nicaraguan Córdoba;Nicaragua
-NOK;Norwegian Krone;Norway
-NPR;Nepalese Rupee;Nepal
-NZD;New Zealand Dollar;New Zealand
-OMR;Omani Rial;Oman
-PAB;Panamanian Balboa;Panama
-PEN;Peruvian Sol;Peru
-PGK;Papua New Guinean Kina;Papua New Guinea
-PHP;Philippine Peso;Philippines
-PKR;Pakistani Rupee;Pakistan
-PLN;Polish Złoty;Poland
-PYG;Paraguayan Guaraní;Paraguay
-QAR;Qatari Riyal;Qatar
-RON;Romanian Leu;Romania
-RSD;Serbian Dinar;Serbia
-RUB;Russian Ruble;Russia
-RWF;Rwandan Franc;Rwanda
-SAR;Saudi Riyal;Saudi Arabia
-SBD;Solomon Islands Dollar;Solomon Islands
-SCR;Seychellois Rupee;Seychelles
-SDG;Sudanese Pound;Sudan
-SEK;Swedish Krona;Sweden
-SGD;Singapore Dollar;Singapore
-SHP;Saint Helena Pound;Saint Helena
-SLE;Sierra Leonean Leone;Sierra Leone
-SOS;Somali Shilling;Somalia
-SRD;Surinamese Dollar;Suriname
-SSP;South Sudanese Pound;South Sudan
-STN;São Tomé and Príncipe Dobra;São Tomé and Príncipe
-SYP;Syrian Pound;Syria
-SZL;Eswatini Lilangeni;Eswatini
-THB;Thai Baht;Thailand
-TJS;Tajikistani Somoni;Tajikistan
-TMT;Turkmenistan Manat;Turkmenistan
-TND;Tunisian Dinar;Tunisia
-TOP;Tongan Paʻanga;Tonga
-TRY;Turkish Lira;Turkey
-TTD;Trinidad and Tobago Dollar;Trinidad and Tobago
-TVD;Tuvaluan Dollar;Tuvalu
-TWD;New Taiwan Dollar;Taiwan
-TZS;Tanzanian Shilling;Tanzania
-UAH;Ukrainian Hryvnia;Ukraine
-UGX;Ugandan Shilling;Uganda
-USD;United States Dollar;United States
-UYU;Uruguayan Peso;Uruguay
-UZS;Uzbekistani So'm;Uzbekistan
-VES;Venezuelan Bolívar Soberano;Venezuela
-VND;Vietnamese Đồng;Vietnam
-VUV;Vanuatu Vatu;Vanuatu
-WST;Samoan Tālā;Samoa
-XAF;Central African CFA Franc;CEMAC
-XCD;East Caribbean Dollar;Organisation of Eastern Caribbean States
-XDR;Special Drawing Rights;International Monetary Fund
-XOF;West African CFA franc;CFA
-XPF;CFP Franc;Collectivités d'Outre-Mer
-YER;Yemeni Rial;Yemen
-ZAR;South African Rand;South Africa
-ZMW;Zambian Kwacha;Zambia
-ZWL;Zimbabwean Dollar;Zimbabwe
+Currency Code;Currency Name;Country;Filter Alura
+AED;UAE Dirham;United Arab Emirates;0
+AFN;Afghan Afghani;Afghanistan;0
+ALL;Albanian Lek;Albania;0
+AMD;Armenian Dram;Armenia;0
+ANG;Netherlands Antillian Guilder;Netherlands Antilles;0
+AOA;Angolan Kwanza;Angola;0
+ARS;Argentine Peso;Argentina;x
+AUD;Australian Dollar;Australia;0
+AWG;Aruban Florin;Aruba;0
+AZN;Azerbaijani Manat;Azerbaijan;0
+BAM;Bosnia and Herzegovina Mark;Bosnia and Herzegovina;0
+BBD;Barbados Dollar;Barbados;0
+BDT;Bangladeshi Taka;Bangladesh;0
+BGN;Bulgarian Lev;Bulgaria;0
+BHD;Bahraini Dinar;Bahrain;0
+BIF;Burundian Franc;Burundi;0
+BMD;Bermudian Dollar;Bermuda;0
+BND;Brunei Dollar;Brunei;0
+BOB;Bolivian Boliviano;Bolivia;x
+BRL;Brazilian Real;Brazil;x
+BSD;Bahamian Dollar;Bahamas;0
+BTN;Bhutanese Ngultrum;Bhutan;0
+BWP;Botswana Pula;Botswana;0
+BYN;Belarusian Ruble;Belarus;0
+BZD;Belize Dollar;Belize;0
+CAD;Canadian Dollar;Canada;0
+CDF;Congolese Franc;Democratic Republic of the Congo;0
+CHF;Swiss Franc;Switzerland;0
+CLP;Chilean Peso;Chile;x
+CNY;Chinese Renminbi;China;0
+COP;Colombian Peso;Colombia;x
+CRC;Costa Rican Colon;Costa Rica;0
+CUP;Cuban Peso;Cuba;0
+CVE;Cape Verdean Escudo;Cape Verde;0
+CZK;Czech Koruna;Czech Republic;0
+DJF;Djiboutian Franc;Djibouti;0
+DKK;Danish Krone;Denmark;0
+DOP;Dominican Peso;Dominican Republic;0
+DZD;Algerian Dinar;Algeria;0
+EGP;Egyptian Pound;Egypt;0
+ERN;Eritrean Nakfa;Eritrea;0
+ETB;Ethiopian Birr;Ethiopia;0
+EUR;Euro;European Union;0
+FJD;Fiji Dollar;Fiji;0
+FKP;Falkland Islands Pound;Falkland Islands;0
+FOK;Faroese Króna;Faroe Islands;0
+GBP;Pound Sterling;United Kingdom;0
+GEL;Georgian Lari;Georgia;0
+GGP;Guernsey Pound;Guernsey;0
+GHS;Ghanaian Cedi;Ghana;0
+GIP;Gibraltar Pound;Gibraltar;0
+GMD;Gambian Dalasi;The Gambia;0
+GNF;Guinean Franc;Guinea;0
+GTQ;Guatemalan Quetzal;Guatemala;0
+GYD;Guyanese Dollar;Guyana;0
+HKD;Hong Kong Dollar;Hong Kong;0
+HNL;Honduran Lempira;Honduras;0
+HRK;Croatian Kuna;Croatia;0
+HTG;Haitian Gourde;Haiti;0
+HUF;Hungarian Forint;Hungary;0
+IDR;Indonesian Rupiah;Indonesia;0
+ILS;Israeli New Shekel;Israel;0
+IMP;Manx Pound;Isle of Man;0
+INR;Indian Rupee;India;0
+IQD;Iraqi Dinar;Iraq;0
+IRR;Iranian Rial;Iran;0
+ISK;Icelandic Króna;Iceland;0
+JEP;Jersey Pound;Jersey;0
+JMD;Jamaican Dollar;Jamaica;0
+JOD;Jordanian Dinar;Jordan;0
+JPY;Japanese Yen;Japan;0
+KES;Kenyan Shilling;Kenya;0
+KGS;Kyrgyzstani Som;Kyrgyzstan;0
+KHR;Cambodian Riel;Cambodia;0
+KID;Kiribati Dollar;Kiribati;0
+KMF;Comorian Franc;Comoros;0
+KRW;South Korean Won;South Korea;0
+KWD;Kuwaiti Dinar;Kuwait;0
+KYD;Cayman Islands Dollar;Cayman Islands;0
+KZT;Kazakhstani Tenge;Kazakhstan;0
+LAK;Lao Kip;Laos;0
+LBP;Lebanese Pound;Lebanon;0
+LKR;Sri Lanka Rupee;Sri Lanka;0
+LRD;Liberian Dollar;Liberia;0
+LSL;Lesotho Loti;Lesotho;0
+LYD;Libyan Dinar;Libya;0
+MAD;Moroccan Dirham;Morocco;0
+MDL;Moldovan Leu;Moldova;0
+MGA;Malagasy Ariary;Madagascar;0
+MKD;Macedonian Denar;North Macedonia;0
+MMK;Burmese Kyat;Myanmar;0
+MNT;Mongolian Tögrög;Mongolia;0
+MOP;Macanese Pataca;Macau;0
+MRU;Mauritanian Ouguiya;Mauritania;0
+MUR;Mauritian Rupee;Mauritius;0
+MVR;Maldivian Rufiyaa;Maldives;0
+MWK;Malawian Kwacha;Malawi;0
+MXN;Mexican Peso;Mexico;0
+MYR;Malaysian Ringgit;Malaysia;0
+MZN;Mozambican Metical;Mozambique;0
+NAD;Namibian Dollar;Namibia;0
+NGN;Nigerian Naira;Nigeria;0
+NIO;Nicaraguan Córdoba;Nicaragua;0
+NOK;Norwegian Krone;Norway;0
+NPR;Nepalese Rupee;Nepal;0
+NZD;New Zealand Dollar;New Zealand;0
+OMR;Omani Rial;Oman;0
+PAB;Panamanian Balboa;Panama;0
+PEN;Peruvian Sol;Peru;0
+PGK;Papua New Guinean Kina;Papua New Guinea;0
+PHP;Philippine Peso;Philippines;0
+PKR;Pakistani Rupee;Pakistan;0
+PLN;Polish Złoty;Poland;0
+PYG;Paraguayan Guaraní;Paraguay;0
+QAR;Qatari Riyal;Qatar;0
+RON;Romanian Leu;Romania;0
+RSD;Serbian Dinar;Serbia;0
+RUB;Russian Ruble;Russia;0
+RWF;Rwandan Franc;Rwanda;0
+SAR;Saudi Riyal;Saudi Arabia;0
+SBD;Solomon Islands Dollar;Solomon Islands;0
+SCR;Seychellois Rupee;Seychelles;0
+SDG;Sudanese Pound;Sudan;0
+SEK;Swedish Krona;Sweden;0
+SGD;Singapore Dollar;Singapore;0
+SHP;Saint Helena Pound;Saint Helena;0
+SLE;Sierra Leonean Leone;Sierra Leone;0
+SOS;Somali Shilling;Somalia;0
+SRD;Surinamese Dollar;Suriname;0
+SSP;South Sudanese Pound;South Sudan;0
+STN;São Tomé and Príncipe Dobra;São Tomé and Príncipe;0
+SYP;Syrian Pound;Syria;0
+SZL;Eswatini Lilangeni;Eswatini;0
+THB;Thai Baht;Thailand;0
+TJS;Tajikistani Somoni;Tajikistan;0
+TMT;Turkmenistan Manat;Turkmenistan;0
+TND;Tunisian Dinar;Tunisia;0
+TOP;Tongan Paʻanga;Tonga;0
+TRY;Turkish Lira;Turkey;0
+TTD;Trinidad and Tobago Dollar;Trinidad and Tobago;0
+TVD;Tuvaluan Dollar;Tuvalu;0
+TWD;New Taiwan Dollar;Taiwan;0
+TZS;Tanzanian Shilling;Tanzania;0
+UAH;Ukrainian Hryvnia;Ukraine;0
+UGX;Ugandan Shilling;Uganda;0
+USD;United States Dollar;United States;x
+UYU;Uruguayan Peso;Uruguay;0
+UZS;Uzbekistani So'm;Uzbekistan;0
+VES;Venezuelan Bolívar Soberano;Venezuela;0
+VND;Vietnamese Đồng;Vietnam;0
+VUV;Vanuatu Vatu;Vanuatu;0
+WST;Samoan Tālā;Samoa;0
+XAF;Central African CFA Franc;CEMAC;0
+XCD;East Caribbean Dollar;Organisation of Eastern Caribbean States;0
+XDR;Special Drawing Rights;International Monetary Fund;0
+XOF;West African CFA franc;CFA;0
+XPF;CFP Franc;Collectivités d'Outre-Mer;0
+YER;Yemeni Rial;Yemen;0
+ZAR;South African Rand;South Africa;0
+ZMW;Zambian Kwacha;Zambia;0
+ZWL;Zimbabwean Dollar;Zimbabwe;0

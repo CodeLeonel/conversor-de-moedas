@@ -1,7 +1,9 @@
 package br.com.codeleonel.conversormoedas.principal;
 
 import br.com.codeleonel.conversormoedas.cli.ComandosCli;
-import br.com.codeleonel.conversormoedas.repositorios.LeitorMoedas;
+import br.com.codeleonel.conversormoedas.estados.HistoricoEstado;
+import br.com.codeleonel.conversormoedas.repositorios.HistoricoRepositorio;
+import br.com.codeleonel.conversormoedas.repositorios.MoedaRepositorio;
 import br.com.codeleonel.conversormoedas.servicos.ConversorMoedas;
 
 import java.util.Scanner;
@@ -10,7 +12,8 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        LeitorMoedas.lerArquivo("moedas.csv");
+        MoedaRepositorio.lerArquivo("moedas.csv");
+        HistoricoRepositorio.leituraHistorico("historico.csv");
         ConversorMoedas conversorMoedas = new ConversorMoedas();
         Scanner scanner = new Scanner(System.in);
         String codigoBase = null, codigoAlvo = null;
@@ -58,6 +61,38 @@ public class Principal {
                         break;
                     case 4:
                         conversorMoedas.converterValorEntreMoedas(codigoBase, codigoAlvo);
+                        break;
+                    case 5:
+                        var listaHistorico = HistoricoEstado.getListaHistorico();
+                        if(!listaHistorico.isEmpty()){
+
+                            while (true) {
+
+                                for (int i = 0; i < listaHistorico.size(); i++) {
+                                    System.out.println((i + 1) + " - " + listaHistorico.get(i));
+                                }
+
+                                System.out.print("Escolha um histórico (ou 0 - Sair): ");
+
+                                int indice = scanner.nextInt();
+
+                                if(indice != 0) {
+
+                                    System.out.println(listaHistorico.get(indice - 1).fichaCompleta());
+
+                                } else {
+
+                                    break;
+
+                                }
+
+                            }
+
+
+
+                        } else {
+                            System.out.println("Opção inválida!");
+                        }
                         break;
                     default:
                         System.out.println("Opção inválida!");

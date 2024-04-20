@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16483ca-bd98-4c6d-be14-37e9133edd85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/estados/HistoricoEstado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Historico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/HistoricoRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moedas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/moedas.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moedas.ods" beforeDir="false" afterPath="$PROJECT_DIR$/moedas.ods" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/cli/ComandosCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/cli/ComandosCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/estados/ConversaoEstado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Conversao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Conversao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Moeda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/modelos/Moeda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/principal/Teste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/LeitorMoedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/repositorios/MoedaRepositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConversorMoedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/ConversorMoedas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/MontadorURI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/codeleonel/conversormoedas/servicos/MontadorURI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
