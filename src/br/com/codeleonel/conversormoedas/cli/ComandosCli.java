@@ -23,6 +23,7 @@ public class ComandosCli {
 
             menu = """
                     1 - Insira um valor
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -31,6 +32,7 @@ public class ComandosCli {
             menu = """
                     1 - Insira um valor
                     5 - Histórico de conversões
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -39,6 +41,7 @@ public class ComandosCli {
             menu = """
                     1 - Insira um valor
                     2 - Escolha a moeda base
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -48,6 +51,7 @@ public class ComandosCli {
                     1 - Insira um valor
                     2 - Escolha a moeda base
                     5 - Histórico de conversões
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -57,6 +61,7 @@ public class ComandosCli {
                     1 - Insira um valor
                     2 - Escolha a moeda base
                     3 - Escolha a moeda alvo
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -67,6 +72,7 @@ public class ComandosCli {
                     2 - Escolha a moeda base
                     3 - Escolha a moeda alvo
                     5 - Histórico de conversões
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -77,6 +83,7 @@ public class ComandosCli {
                     2 - Escolha a moeda base
                     3 - Escolha a moeda alvo
                     4 - Converter o valor
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 
@@ -88,6 +95,7 @@ public class ComandosCli {
                     3 - Escolha a moeda alvo
                     4 - Converter o valor
                     5 - Histórico de conversões
+                    6 - Sobre o programa
                     0 - Sair
                     Digite uma opção:  """;
 

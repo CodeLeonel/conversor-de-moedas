@@ -85,6 +85,34 @@ public class Principal {
                         System.out.println("Opção inválida!");
                     }
                     break;
+                case 6:
+
+                    while (true) {
+
+                        System.out.print("""
+                                Conversor de Moedas
+                                
+                                Trata-se de um programa de interface de linha comando que realiza cálculos de conversçao de moedas.
+                                Parte desse processo ocorre por consultas de uma WEB API de taxa de conversão.
+                                
+                                Desenvolvido por: Hugo Leonel
+                                Projeto motivado pela: Alura ONE
+                                Portólio: https://hl-portfolio.vercel.app/
+                                
+                                0 - Sair
+                                Digite a opção: """);
+
+                        int opcaoSobre = scanner.nextInt();
+
+                        if(opcaoSobre == 0) {
+                            break;
+                        } else {
+                            System.out.println("Opção inválida");
+                        }
+
+                    }
+
+                    break;
                 default:
                     System.out.println("Opção inválida!");
                     break;

@@ -2,7 +2,7 @@
 
 ## O que é?
 
-Trata-se de um programa de interface de linha comando que realiza cálculos de conversçao de moedas. Parte desse processo ocorre por consulta de API de taxa de conversão.
+Trata-se de um programa de interface de linha comando que realiza cálculos de conversçao de moedas. Parte desse processo ocorre por consultas de uma WEB API de taxa de conversão.
 
 ## Como roda?
 

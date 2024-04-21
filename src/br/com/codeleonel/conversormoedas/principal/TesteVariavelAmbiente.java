@@ -1,6 +1,6 @@
 package br.com.codeleonel.conversormoedas.principal;
 
-public class TesteVariaelAmbiente {
+public class TesteVariavelAmbiente {
 
     public static void main(String[] args) {
 
